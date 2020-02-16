@@ -5,3 +5,29 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.warpper{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+
+    #sidebar{
+        min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
+        background: rgb(236, 235, 235);
+        transition: all 0.3s;
+
+        .active{
+            background: white;
+        }
+    }
+
+    #content{
+        width: 100%;
+    }
+
+    .sidebarHideShow{
+        margin-left: -250px;
+    }
+}

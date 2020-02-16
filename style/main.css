@@ -4,4 +4,35 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.warpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.warpper #sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  background: #ecebeb;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.warpper #sidebar .active {
+  background: white;
+}
+
+.warpper #content {
+  width: 100%;
+}
+
+.warpper .sidebarHideShow {
+  margin-left: -250px;
+}
 /*# sourceMappingURL=main.css.map */
